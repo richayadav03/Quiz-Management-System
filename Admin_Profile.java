@@ -8,10 +8,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.*;
-/**
- *
- * @author BHAVYA
- */
+
+
 public class Admin_Profile extends javax.swing.JFrame {
 int c;
 String s50; 
@@ -300,10 +298,10 @@ String s50;
 
    
     }//GEN-LAST:event_jButton4ActionPerformed
-static final String DB_URL ="jdbc:mysql://localhost:3306/quiz";
+   static final String DB_URL ="jdbc:mysql://localhost:3306/quiz";
    static final String DB_DRV ="com.mysql.jdbc.Driver";
    static final String DB_USER = "root";
-   static final String DB_PASSWD = "thV@1995";
+   static final String DB_PASSWD = "abc";
 
     /**
      * @param args the command line arguments
