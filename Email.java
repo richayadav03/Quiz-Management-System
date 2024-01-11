@@ -8,10 +8,7 @@ import java.util.*;
 import javax.mail.*;  
 import javax.mail.internet.*;  
 import javax.activation.*;
-/**
- *
- * @author BHAVYA
- */
+
 public class Email extends javax.swing.JFrame {
 String s50;
 String s51;
@@ -43,8 +40,8 @@ int b;
 	props.put("mail.debug", "true");
 	props.put("mail.store.protocol", "pop3");
 	props.put("mail.transport.protocol", "smtp");
-	 String username = "shreyasejani7@gmail.com";//
-	 String password = "tzsk zkcl ioio hzdf";
+	 String username = "your_email";//
+	 String password = "your_string_password";
 		try{
 			Session session = Session.getDefaultInstance(props, 
                           new Authenticator(){
@@ -56,7 +53,7 @@ int b;
       Message msg = new MimeMessage(session);
 
    // -- Set the FROM and TO fields --
-      msg.setFrom(new InternetAddress("shreyasejani7@gmail.com"));
+      msg.setFrom(new InternetAddress("your_email"));
       msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(s52,false));
       msg.setSubject("Quiz Marks");
       msg.setText("YOU HAVE SUBMITTED YOUR EXAM OF  "+s51+"   \n YOUR SCORE :"+String.valueOf(b));
