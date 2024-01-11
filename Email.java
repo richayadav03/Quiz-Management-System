@@ -70,12 +70,6 @@ int b;
 	/**
 	 * @param args the command line arguments
 	 */
-		
-	
-
-
-
-
 
     /**
      * This method is called from within the constructor to initialize the form.
