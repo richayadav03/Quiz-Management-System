@@ -359,13 +359,7 @@ String s50;
     /**
      * @param args the command line arguments
      */
-//    static final String DB_URL ="jdbc:mysql://localhost:3306/support";
-//   static final String DB_DRV ="com.mysql.jdbc.Driver";
-//   static final String DB_USER = "root";
-//   static final String DB_PASSWD = "Bhasha@1602";
-//  static Connection connection;
-//   static Statement statement;
-//        
+
    
     public static void main(String args[]) throws SQLException {
         /* Set the Nimbus look and feel */
