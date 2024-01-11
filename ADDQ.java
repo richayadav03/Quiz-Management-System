@@ -431,7 +431,7 @@ public class ADDQ extends javax.swing.JFrame  {
    static final String DB_URL ="jdbc:mysql://localhost:3306/quiz";
 	static final String DB_DRV ="com.mysql.jdbc.Driver";
 	static final String DB_USER = "root";
-	static final String DB_PASSWD = "thV@1995";      
+	static final String DB_PASSWD = "abc";      
 	int id=1;
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
