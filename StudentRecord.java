@@ -9,11 +9,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import net.proteanit.sql.DbUtils;
 
-
-/**
- *
- * @author BHAVYA
- */
 public class StudentRecord extends javax.swing.JFrame {
 String s50;
 String s51;
@@ -108,16 +103,7 @@ int b;
 				if(rs.next()){
 					avg.setText(String.valueOf(rs.getDouble(1)));
 				}
-//                        int totalMarks =0;
-//                        int stu =0;
-//                        while(resultSet.next()){
-//                            totalMarks = totalMarks+ resultSet.getInt(3);
-//                            stu++;
-//                        }
-//                        if(stu!=0){
-//                        float avg1=(float)totalMarks/stu;
-//                        avg.setText(String.valueOf(rs));
-//                        }
+
 		}catch(Exception e){
 			System.out.println(e);
 		}
@@ -303,7 +289,7 @@ int b;
         static final String DB_URL ="jdbc:mysql://localhost:3306/quiz";
 	static final String DB_DRV ="com.mysql.jdbc.Driver";
 	static final String DB_USER = "root";
-	static final String DB_PASSWD = "thV@1995";
+	static final String DB_PASSWD = "abc";
     /**
      * @param args the command line arguments
      */
