@@ -4,10 +4,7 @@
  */
 package oop_assignment;
 
-/**
- *
- * @author BHAVYA
- */
+
 public class Oop_assignment {
     /**
      * @param args the command line arguments
