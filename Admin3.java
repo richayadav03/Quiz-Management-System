@@ -11,10 +11,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 
-/**
- *
- * @author BHAVYA
- */
 public class Admin3 extends javax.swing.JFrame {
 int b;
 String s50;
@@ -24,22 +20,7 @@ String s51;
      * Creates new form Admin3
      */
     public Admin3(String str,String str1,int n) {
-           // try{
-//            connection =DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWD);
-//           statement=connection.createStatement();
-//          resultset=statement.executeQuery("SELECT * FROM currentsubject;");
-//           
-//          // a=resultset.getInt(1);
-//           
-//            statement.executeUpdate("delete from currentsubject;");
-//           
-//          
-//            }catch(Exception e){
-//                System.out.println(e);
-//            }
-//            if (a==1){
-//                System.out.println("yesssss");
-//            }
+
         initComponents();
     GL1.setText(str1);
     GL2.setText(str);
@@ -270,14 +251,7 @@ String s51;
     /**
      * @param args the command line arguments
      */
-    
-//    static final String DB_URL ="jdbc:mysql://localhost:3306/support";
-//   static final String DB_DRV ="com.mysql.jdbc.Driver";
-//   static final String DB_USER = "root";
-//   static final String DB_PASSWD = "Bhasha@1602";
-//  static Connection connection;
-//   static Statement statement;
-//  ResultSet resultset;
+ 
         
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
