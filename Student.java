@@ -4,10 +4,6 @@
  */
 package oop_assignment;
 
-/**
- *
- * @author BHAVYA
- */
 public class Student extends javax.swing.JFrame {
 
     /**
