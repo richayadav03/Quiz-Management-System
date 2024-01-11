@@ -11,10 +11,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 
-/**
- *
- * @author BHAVYA
- */
 public class Admin1 extends javax.swing.JFrame {
 String s20;
 /**
@@ -23,7 +19,7 @@ String s20;
    static final String DB_URL ="jdbc:mysql://localhost:3306/quiz";
    static final String DB_DRV ="com.mysql.jdbc.Driver";
    static final String DB_USER = "root";
-   static final String DB_PASSWD = "thV@1995";
+   static final String DB_PASSWD = "abc";
 
     public Admin1() {
         initComponents();
