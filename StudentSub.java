@@ -9,10 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import net.proteanit.sql.DbUtils;
-/**
- *
- * @author BHAVYA
- */
+
 public class StudentSub extends javax.swing.JFrame {
 String s50;
 String s51;
@@ -357,7 +354,7 @@ o5.setVisible(true);
     static final String DB_URL ="jdbc:mysql://localhost:3306/quiz";
 	static final String DB_DRV ="com.mysql.jdbc.Driver";
 	static final String DB_USER = "root";
-	static final String DB_PASSWD = "thV@1995";
+	static final String DB_PASSWD = "abc";
         
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
