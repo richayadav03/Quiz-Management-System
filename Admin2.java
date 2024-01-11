@@ -9,10 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- *
- * @author BHAVYA
- */
+
 public class Admin2 extends javax.swing.JFrame {
 
 int x;
