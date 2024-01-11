@@ -9,10 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
-/**
- *
- * @author BHAVYA
- */
+
 public class ADDQ extends javax.swing.JFrame  {
     int k;
     String s51;
