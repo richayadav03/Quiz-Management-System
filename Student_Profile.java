@@ -9,10 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.*;
 
-/**
- *
- * @author BHAVYA
- */
+
 public class Student_Profile extends javax.swing.JFrame {
 String s50;
 
@@ -298,7 +295,7 @@ o5.setVisible(true);
    static final String DB_URL ="jdbc:mysql://localhost:3306/quiz";
    static final String DB_DRV ="com.mysql.jdbc.Driver";
    static final String DB_USER = "root";
-   static final String DB_PASSWD = "thV@1995";
+   static final String DB_PASSWD = "abc";
     /**
      * @param args the command line arguments
      */
