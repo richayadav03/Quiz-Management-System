@@ -14,10 +14,8 @@ import java.util.Random;
 import java.sql.Statement;
 import java.util.Date;
 import javax.swing.JOptionPane;
-/**
- *
- * @author BHAVYA
- */
+
+
 public class QUIZ extends javax.swing.JFrame {
 String s50;
 String s51; 
@@ -151,84 +149,50 @@ public void question(){
 //		Connection connection = null;
 //		Statement statement = null;
 		int k=0;
-		try{
-//			connection=DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWD);
-//			statement=connection.createStatement();
-//			   switch(b){
-//                            case 1:
-//                                rs = statement.executeQuery("select * from que_bank where cid='2CS301' order by RAND(); ");
-//                                break;
-//                                 case 2:
-//                                     rs = statement.executeQuery("select * from que_bank where cid='2CS302' order by RAND(); ");
-//                                break;
-//                                 case 3:
-//                                     rs = statement.executeQuery("select * from que_bank where cid='2CS303' order by RAND(); ");
-//                                break;
-//                                 case 4:
-//                                     rs = statement.executeQuery("select * from que_bank where cid='2CS304' order by RAND(); ");
-//                                break;
-//                                 case 5:
-//                                     rs = statement.executeQuery("select * from que_bank where cid='2CS305' order by RAND(); ");
-//                                break;
-//                                 case 6:
-//                                     rs = statement.executeQuery("select * from que_bank where cid='2CS306' order by RAND(); ");
-//                                break;
-//                            default:
-//                                break;
-//                        }		
-//			while(k<n){
-//			rs.next();
-//			k++;
-//			}
-//			rs.next();
+		try{  
+			//for last que hide next
+			if (!rs.next()||n==12) {
+			    
+				next.setVisible(false);
+				jLabel1.setText("");
+				jLabel2.setText("");
+				question.setText("Exam Completed.\nPlease click on Submit Button.");
+				opt1.setVisible(false);
+				opt2.setVisible(false);
+				opt3.setVisible(false);
+				opt4.setVisible(false);
+	  
+			}
+			else{
 			
-                        
-				//for last que hide next
-				if (!rs.next()||n==12) {
-                                    
-					next.setVisible(false);
-                                        jLabel1.setText("");
-					jLabel2.setText("");
-					question.setText("Exam Completed.\nPlease click on Submit Button.");
-					opt1.setVisible(false);
-					opt2.setVisible(false);
-					opt3.setVisible(false);
-					opt4.setVisible(false);
-		  
-				}
-                                else{
-                                
-                                jLabel2.setText(String.valueOf(n));
-			question.setText(rs.getString(4));
-				String so1,so2,so3,so4;
-				String[] strings = {rs.getString(5),rs.getString(6),rs.getString(7), rs.getString(8)};
-				Random rand = new Random();
+			jLabel2.setText(String.valueOf(n));
+		question.setText(rs.getString(4));
+			String so1,so2,so3,so4;
+			String[] strings = {rs.getString(5),rs.getString(6),rs.getString(7), rs.getString(8)};
+			Random rand = new Random();
 
-				// assign strings randomly to variables
-				so1 = strings[rand.nextInt(4)];
-				so2 = strings[rand.nextInt(4)];
-				while (so2.equals(so1)) {
-				    so2 = strings[rand.nextInt(4)];
-				}
-				so3 = strings[rand.nextInt(4)];
-				while (so3.equals(so1) || so3.equals(so2)) {
-				    so3 = strings[rand.nextInt(4)];
-				}
-				so4 = strings[rand.nextInt(4)];
-				while (so4.equals(so1) || so4.equals(so2) || so4.equals(so3)) {
-				    so4 = strings[rand.nextInt(4)];
-				}  
-				
-				opt1.setText(so1);
-				opt2.setText(so2);
-				opt3.setText(so3);
-				opt4.setText(so4);
-				answer = rs.getString(5);
-			        n++;
-                        
-                                
-                                
-                                }
+			// assign strings randomly to variables
+			so1 = strings[rand.nextInt(4)];
+			so2 = strings[rand.nextInt(4)];
+			while (so2.equals(so1)) {
+			    so2 = strings[rand.nextInt(4)];
+			}
+			so3 = strings[rand.nextInt(4)];
+			while (so3.equals(so1) || so3.equals(so2)) {
+			    so3 = strings[rand.nextInt(4)];
+			}
+			so4 = strings[rand.nextInt(4)];
+			while (so4.equals(so1) || so4.equals(so2) || so4.equals(so3)) {
+			    so4 = strings[rand.nextInt(4)];
+			}  
+			
+			opt1.setText(so1);
+			opt2.setText(so2);
+			opt3.setText(so3);
+			opt4.setText(so4);
+			answer = rs.getString(5);
+			n++;
+			}
                         
 		}
 		catch(Exception e){
@@ -608,7 +572,7 @@ public void submit(){
       static final String DB_URL1 ="jdbc:mysql://localhost:3306/quiz";
 	static final String DB_DRV ="com.mysql.jdbc.Driver";
 	static final String DB_USER = "root";
-	static final String DB_PASSWD = "thV@1995"; 
+	static final String DB_PASSWD = "abc"; 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
