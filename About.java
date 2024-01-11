@@ -4,10 +4,7 @@
  */
 package oop_assignment;
 
-/**
- *
- * @author BHAVYA
- */
+
 public class About extends javax.swing.JFrame {
 
     /**
